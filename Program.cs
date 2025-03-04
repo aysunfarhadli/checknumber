@@ -1,20 +1,15 @@
-﻿using System; // Sistem kitabxanasını əlavə edirik
-
+﻿using System; 
 class Program
 {
     static void Main()
     {
-        // Ekrana mesaj yazdırırıq
-        Console.WriteLine("İki rəqəmli bir ədəd daxil edin:");
+        Console.WriteLine("İkirəqəmli bir ədəd daxil edin");
 
-        // İstifadəçidən məlumat alırıq və rəqəmə çeviririk
         int eded = Convert.ToInt32(Console.ReadLine());
 
-        // Onluq və təkliq hissələri hesablayırıq
-        int onluq = eded / 10;  // Ədədin onluq hissəsini tapırıq
-        int tekliq = eded % 10; // Ədədin təkliq hissəsini tapırıq
+        int onluq = eded / 10;  
+        int tekliq = eded % 10; 
 
-        // Ədədləri müqayisə edirik
         if (onluq > tekliq)
         {
             Console.WriteLine("Onluq hissə böyükdür.");
